@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Roboto+Condensed:wght@700&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nick">@burmistr.i</div>
+        <!-- <div class="register">
+            <button>ЗАПИСАТЬСЯ</button>
+        </div> -->
+    </header>
+    <div class="name">БУРМИСТРОВА ИРИНА ИГОРЕВНА</div>
+    <div class="main">
+        <div class="education">
+            <div class="ed_1" align="center">
+                <!-- Я репетитор со стажем работы более <span class="marked">5 лет.</span> <p></p>
+                В 2022 году я закончила Ульяновский государственный педагогический университет имени И. Н. Ульянова с
+                отличием. -->
+                Я - онлайн репетитор по математике с опытом работы более 5 лет. <p></p>
+
+                В 2022 году закончила Ульяновский Государственный Педагогический университет с красным дипломом.
+            </div>
+            <div class="ed_2" align="center">
+                <!-- Сейчас я получаю магистерскую степень по специальности<p></p> "Методология математического образования".  -->
+                Мое образование позволяет мне иметь глубокое понимание математических концепций и эффективно передавать их своим ученикам.
+            </div>
+            </div>
+            <div class="photo">
+                <img src="4Z8A9817.jpg" alt="">        
+            </div>
+            <div class="personality">
+                <div class="per_1" align="center">
+                    <!-- Моя основная задача в преподавании стать другом и наставником, <p></p>
+                    с которым в комфортной и дружелюбной обстановке можно раз и навсегда разобраться с математикой. -->
+                    <!-- Моя основная задача в преподавании стать другом и наставником. <p></p> -->
+                    Ученики отмечают, что я просто и понятно объясняю материал. <p></p> Мои уроки созданы с использованием различных методов и интерактивных платформ, чтобы каждый ученик мог освоить материал на своем уровне.
+                </div>
+                <div class="per_2" align="center">
+                    <!-- Также я делюсь своим опытом и помогаю репетиторам, которые хотят сделать свои уроки интереснее, работу, а заработок выше. -->
+                    Кроме того, я также являюсь ментором для других преподавателей и помогаю им повысить ценность своих занятий.
+                </div>
+            </div>
+    </div>
+        
+    <!-- </div> -->
+    <div class="math_reps">
+        <div class="headers">
+            <div class="math_header" onclick='moveToMath()'>УЧЕНИКАМ</div>
+            <div class="reps_header" onclick="moveToReps()">РЕПЕТИТОРАМ</div>
+        </div>
+        <div class="horizontal_line">
+            <div class="slider"></div>
+        </div>
+        <div class="math_info">
+            Занятия проходят в Zoom. <p></p>
+                            Индивидуальный урок:
+                            <ul>
+                                <li>1500₽ (60 минут)</li>
+                                <li class="second">2200₽ (90 минут)</li>
+                            </ul>
+                            Групповой урок:
+                            <ul>
+                                <li>2 человека - 1000₽ (60 минут)</li>
+                                <li class="second">3 человека - 800₽ (60 минут)</li>
+                            </ul>
+                            Первое, пробное занятие 30-40 минут - бесплатно.
+        </div>
+        <div class="reps_info">
+            Запросы с которыми работаю на консультации:
+                            <ul>
+                                <li>С чего начать работу?</li>
+                                <li>Блог</li>
+                                <li>Условия работы</li>
+                                <li>Форма занятий</li>
+                                <li>Интерактивы на уроках</li>
+                            </ul>
+                            1 консультация - 3000₽ <p></p>(2-2,5 часа)
+        </div>
+        <div class="math_register">
+            <button onclick="location.href='https://forms.gle/A9w5ASrACu2Uxqo6A'">ЗАПИСАТЬСЯ НА ПРОБНЫЙ УРОК</button>
+        </div>
+        <div class="reps_register">
+            <button onclick="location.href='https://forms.gle/sGqCBNbiXoYo25H58'">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
+        </div>
+    </div>
+    <div class="reviews">
+        <div class="revs_header">ОТЗЫВЫ</div>
+        <div class="revs_menu">
+            <div class="page_1" onclick="toPage1()"></div>
+            <div class="page_2" onclick="toPage2()"></div>
+            <div class="page_3" onclick="toPage3()"></div>
+            <div class="page_4" onclick="toPage4()"></div>
+            <div class="page_5" onclick="toPage5()"></div>
+        </div>
+        <div class="revs">
+            <div class="rev_1">
+                <img src="rev_1.jpg" alt="">
+            </div>
+            <div class="rev_2">
+                <img src="rev_2.jpg" alt="">
+            </div>
+            <div class="rev_3">
+                <img src="rev_3.jpg" alt="">
+            </div>
+            <div class="rev_4">
+                <img src="rev_4.jpg" alt="">
+            </div>
+            <div class="rev_5">
+                <img src="rev_5.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="cases">
+        <div class="cases_header">АКТУАЛЬНЫЕ КЕЙСЫ</div>
+        <div class="cases_button">
+            <img src="inst.png" alt="">
+        </div>
+    </div>
+    <script>
+        function moveToReps() {
+            var repsButton = document.querySelector('.reps_header');
+            var slider = document.querySelector('.slider');
+            var repsBlock = document.querySelector('.reps_info');
+            var repsRegister = document.querySelector('.reps_register button');
+            var mathBlock = document.querySelector('.math_info');
+            var mathRegister = document.querySelector('.math_register button');
+            var mathButton = document.querySelector('.math_header');
+
+            if (screen.width > 1210) {
+                slider.style.transform = 'translateX(230%)';
+            }
+            
+            else if (screen.width <= 1201 && screen.width >= 994) 
+            {
+                slider.style.transform = 'translateX(283%)';
+            }
+
+            else if (screen.width <= 993 && screen.width >= 770) 
+            {
+                slider.style.transform = 'translateX(332%)';
+            }
+
+            else if (screen.width <= 769 && screen.width >= 578)
+            {
+                slider.style.transform = 'translateX(415%)';
+            }
+
+            else if (screen.width <= 577 && screen.width >= 430)
+            {
+                slider.style.transform = 'translateX(535%)';
+            }
+
+            else if (screen.width <= 429 && screen.width >= 378)
+            {
+                slider.style.transform = 'translateX(180%)';
+            }
+
+            else if (screen.width <= 377) 
+            {
+                slider.style.transform = 'translateX(175%)';
+            }
+
+            mathBlock.style.display = 'none';
+            mathRegister.style.display = 'none';
+            mathButton.style.color = '#8CB6D0';
+
+            repsBlock.style.display = 'block';
+            repsRegister.style.display = 'flex';
+            repsButton.style.color = '#37538A';
+        }
+
+        function moveToMath() {
+            var repsButton = document.querySelector('.reps_header');
+            var slider = document.querySelector('.slider');
+            var repsBlock = document.querySelector('.reps_info');
+            var repsRegister = document.querySelector('.reps_register button');
+            var mathBlock = document.querySelector('.math_info');
+            var mathRegister = document.querySelector('.math_register button');
+            var mathButton = document.querySelector('.math_header');
+
+            slider.style.transform = 'translateX(0)';
+
+            mathBlock.style.display = 'block';
+            mathRegister.style.display = 'flex';
+            mathButton.style.color = '#37538A';
+
+            repsBlock.style.display = 'none';
+            repsRegister.style.display = 'none';
+            repsButton.style.color = '#8CB6D0';
+        }
+
+        function toPage1() {
+            page1 = document.querySelector('.page_1');
+            page2 = document.querySelector('.page_2');
+            page3 = document.querySelector('.page_3');
+            page4 = document.querySelector('.page_4');
+            page5 = document.querySelector('.page_5');
+
+            rev1 = document.querySelector('.rev_1');
+            rev2 = document.querySelector('.rev_2');
+            rev3 = document.querySelector('.rev_3');
+            rev4 = document.querySelector('.rev_4');
+            rev5 = document.querySelector('.rev_5');
+
+            page1.style.background = '#37538A';
+            page2.style.background = '#F7F9F6';
+            page3.style.background = '#F7F9F6';
+            page4.style.background = '#F7F9F6';
+            page5.style.background = '#F7F9F6';
+
+            rev1.style.display = 'flex';
+            rev2.style.display = 'none';
+            rev3.style.display = 'none';
+            rev4.style.display = 'none';
+            rev5.style.display = 'none';
+        }
+
+        function toPage2() {
+            page1 = document.querySelector('.page_1');
+            page2 = document.querySelector('.page_2');
+            page3 = document.querySelector('.page_3');
+            page4 = document.querySelector('.page_4');
+            page5 = document.querySelector('.page_5');
+
+            rev1 = document.querySelector('.rev_1');
+            rev2 = document.querySelector('.rev_2');
+            rev3 = document.querySelector('.rev_3');
+            rev4 = document.querySelector('.rev_4');
+            rev5 = document.querySelector('.rev_5');
+
+            page1.style.background = '#F7F9F6';
+            page2.style.background = '#37538A';
+            page3.style.background = '#F7F9F6';
+            page4.style.background = '#F7F9F6';
+            page5.style.background = '#F7F9F6';
+
+            rev1.style.display = 'none';
+            rev2.style.display = 'flex';
+            rev3.style.display = 'none';
+            rev4.style.display = 'none';
+            rev5.style.display = 'none';
+        }
+
+        function toPage3() {
+            page1 = document.querySelector('.page_1');
+            page2 = document.querySelector('.page_2');
+            page3 = document.querySelector('.page_3');
+            page4 = document.querySelector('.page_4');
+            page5 = document.querySelector('.page_5');
+
+            rev1 = document.querySelector('.rev_1');
+            rev2 = document.querySelector('.rev_2');
+            rev3 = document.querySelector('.rev_3');
+            rev4 = document.querySelector('.rev_4');
+            rev5 = document.querySelector('.rev_5');
+
+            page1.style.background = '#F7F9F6';
+            page2.style.background = '#F7F9F6';
+            page3.style.background = '#37538A';
+            page4.style.background = '#F7F9F6';
+            page5.style.background = '#F7F9F6';
+
+            rev1.style.display = 'none';
+            rev2.style.display = 'none';
+            rev3.style.display = 'flex';
+            rev4.style.display = 'none';
+            rev5.style.display = 'none';
+        }
+
+        function toPage4() {
+            page1 = document.querySelector('.page_1');
+            page2 = document.querySelector('.page_2');
+            page3 = document.querySelector('.page_3');
+            page4 = document.querySelector('.page_4');
+            page5 = document.querySelector('.page_5');
+
+            rev1 = document.querySelector('.rev_1');
+            rev2 = document.querySelector('.rev_2');
+            rev3 = document.querySelector('.rev_3');
+            rev4 = document.querySelector('.rev_4');
+            rev5 = document.querySelector('.rev_5');
+
+            page1.style.background = '#F7F9F6';
+            page2.style.background = '#F7F9F6';
+            page3.style.background = '#F7F9F6';
+            page4.style.background = '#37538A';
+            page5.style.background = '#F7F9F6';
+
+            rev1.style.display = 'none';
+            rev2.style.display = 'none';
+            rev3.style.display = 'none';
+            rev4.style.display = 'flex';
+            rev5.style.display = 'none';
+        }
+
+        function toPage5() {
+            page1 = document.querySelector('.page_1');
+            page2 = document.querySelector('.page_2');
+            page3 = document.querySelector('.page_3');
+            page4 = document.querySelector('.page_4');
+            page5 = document.querySelector('.page_5');
+
+            rev1 = document.querySelector('.rev_1');
+            rev2 = document.querySelector('.rev_2');
+            rev3 = document.querySelector('.rev_3');
+            rev4 = document.querySelector('.rev_4');
+            rev5 = document.querySelector('.rev_5');
+
+            page1.style.background = '#F7F9F6';
+            page2.style.background = '#F7F9F6';
+            page3.style.background = '#F7F9F6';
+            page4.style.background = '#F7F9F6';
+            page5.style.background = '#37538A';
+
+            rev1.style.display = 'none';
+            rev2.style.display = 'none';
+            rev3.style.display = 'none';
+            rev4.style.display = 'none';
+            rev5.style.display = 'flex';
+        }
+    </script>
+</body>
+</html>

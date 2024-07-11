@@ -1,0 +1,444 @@
+* {
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color:  #F7F9F6;
+}
+
+header {
+    display: flex;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    /* background-color: #BBBBF2; */
+    background-color: #8CB6D0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.nick {
+    font-size: 2.5rem;
+    margin: 0 auto;
+    /* color: #37538A; */
+    color: white;
+}
+
+.name {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 5%;
+    color: #37538A;
+}
+
+.main {
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2.5%;
+    gap: 5%;
+}
+
+.education, .personality {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+.ed_1, .ed_2, .per_1, .per_2 {
+    padding: 5%;
+    border-radius: 10px;
+    background-color: #8CB6D0;
+    /* color: black; */
+    /* color: #F7F9F6; */
+    /* color: white; */
+    /* color: #37538A; */
+    color: #39405C;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.ed_2, .per_2{
+    margin-top: 10%;
+}
+
+.photo {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.photo img {
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.math_reps {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 4%;
+}
+
+.headers {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    font-size: 1.6rem;
+}
+
+.math_header, .reps_header {
+    cursor: pointer;
+    /* color: #37538A; */
+    color: #37538A;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.reps_header {
+    color: #8CB6D0;
+}
+
+.reps_info {
+    display: none;
+}
+
+.horizontal_line {
+    /* border: 1px solid black; */
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    border-radius: 25px;
+}
+
+.slider {
+    border: 2px solid #37538A;
+    border-radius: 25px;
+    width: 30%;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.math_info, .reps_info {
+    margin-top: 3%;
+    margin: 0 auto;
+    width: 30%;
+    padding: 2%;
+    border-radius: 10px;
+    /* background-color: #A6A7EE; */
+    background-color: #8CB6D0;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    color: #39405C;
+    line-height: 140%;
+}
+
+ul {
+    padding-left: 10%;
+    padding-top: 1%;
+}
+
+.math_register {
+    margin-top: 1.5%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.reps_register {
+    margin-top: .1%;
+    display: flex;
+    justify-content: center;
+}
+
+.math_register button, .reps_register button {
+    font-size: 1.34rem;
+    padding: 1%;
+    /* background-color: #ECC0C9; */
+    background-color: #C699BF;
+    border-radius: 10px;
+    color: #39405C;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 34.5%;
+}
+
+.math_register button:hover, .reps_register button:hover {
+    color: #F7F9F6;
+    transform: scale(1.1);
+}
+
+.reps_register button {
+    display: none;
+    width: 35%;
+}
+
+.reviews {
+    /* border: 1px solid black; */
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2.5%;
+}
+
+.revs_header {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 1%;
+    color: #37538A;
+}
+
+.revs_menu {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.page_1, .page_2, .page_3, .page_4, .page_5 {
+    border: 1px solid #37538A;
+    border-radius: 100px;
+    padding: .8%;
+    cursor: pointer;
+    background-color: #F7F9F6;
+    transition: all 0.3s ease-in-out;
+}
+
+.page_1 {
+    background-color: #37538A;
+}
+
+.revs {
+    display: flex;
+    gap: 2.5%;
+    /* border: 1px solid black; */
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.rev_1 {
+    display: flex;
+    justify-content: center;
+}
+
+.rev_1, .rev_2, .rev_3, .rev_4, .rev_5 {
+    justify-content: center;
+}
+
+.rev_1 img, .rev_2 img, .rev_3 img, .rev_4 img, .rev_5 img {
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.rev_2, .rev_3, .rev_4, .rev_5 {
+    display: none;
+}
+
+
+.cases {
+    padding-top: 2%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #37538A;
+}
+
+.marked {
+    background-color: #B5BFB0;
+}
+
+.cases_button {
+    /* width: 50%; */
+    padding-top: 1%;
+}
+
+.cases_button img {
+    width: 5%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.cases_button img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:1201px) {
+    .name {
+        padding-top: 8%;
+    }
+
+    .education, .personality {
+        font-size: 1.1rem;
+    }
+
+    .slider {
+        margin-left: -9%;
+    }
+}
+
+@media (max-width:993px) {
+    .education, .personality {
+        font-size: 0.9rem;
+    }
+
+    .slider {
+        margin-left: -17%;
+    }
+}
+
+@media (max-width: 769px) {
+    .main {
+        flex-direction: column;
+        /* border: 1px solid black; */
+    }
+
+    .education, .personality {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    
+    .personality {
+        margin-top: 2%;
+    }
+
+    .ed_2, .per_2 {
+        margin-top: 2%;
+    }
+
+    .photo {
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .slider {
+        margin-left: -30%;
+    }
+
+    .math_info, .reps_info {
+        width: 60%;
+    }
+
+    .math_register button, .reps_register button {
+        width:65%;
+    }
+
+    .page_1, .page_2, .page_3, .page_4, .page_5 {
+        padding: 1.2%;
+    }
+}
+
+@media (max-width: 577px) {
+    .name {
+        padding-top: 13%;
+    }
+
+    .slider {
+        margin-left: -50%;
+    }
+}
+
+@media (max-width: 429px) {
+    .name {
+        font-size: 2rem;
+        padding-top: 15%;
+    }
+
+    .photo, .per_2 {
+        margin-top: 3%;
+    }
+
+    .headers {
+        font-size: 1.4rem;
+    }
+
+    .slider {
+        width: 80%;
+        margin-left: -65%;
+    }
+    
+    .math_info, .reps_info {
+        width: 95%;
+    }
+
+    .reps_register button, .math_register button {
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .revs_menu {
+        gap: 8%;
+    }
+    .page_1, .page_2, .page_3, .page_4, .page_5 {
+        padding: 2.5%;
+    }
+
+    .rev_1 img, .rev_2 img, .rev_3 img, .rev_4 img, .rev_5 img {
+        width: 100%;
+    }
+
+    .revs_header, .cases_header {
+        font-size: 2rem;
+    }
+
+    .cases_button img {
+        width: 17%;
+    }
+    
+}
+
+@media (max-width: 377px) {
+    .name {
+        padding-top: 18%;
+        font-size: 2.3rem;
+    }
+
+    .ed_2, .per_2, .photo {
+        margin-top: 3%;
+    }
+
+    .headers {
+        font-size: 1.2rem;
+    }
+    
+    .slider {
+        width: 80%;
+        margin-left: -63%;
+    }
+
+    .math_info, .reps_info {
+        width: 95%;
+    }
+
+    .math_register button, .reps_register button {
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .revs_header {
+        font-size: 2rem;
+    }
+
+    .revs_menu {
+        gap: 10%;
+    }
+    .page_1, .page_2, .page_3, .page_4, .page_5 {
+        padding: 2%;
+    }
+
+    .revs {
+        margin-top: 2%;
+    }
+    .rev_1 img, .rev_2 img, .rev_3 img, .rev_4 img, .rev_5 img {
+        width: 100%;
+    }
+
+    .cases_header {
+        font-size: 2rem;
+    }
+
+    .cases_button img {
+        width: 20%;
+    }
+
+}
